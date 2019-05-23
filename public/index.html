@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+
+        <h3>Good Reads 3.0</h3>
+        <p>I got extremely stuck. I didn't do anything more than get the preview urls from the api.</p>
+        <p>I have no idea how to display them to the screen and no idea why both loading and {{book}} are displaying when they're in if and else. I got rocked.</p>
+      <form v-on:submit.prevent="queryBook">
+        <input v-model="bookName" placeholder="Book">
+        <br />
+        <button @click="queryBook">Books</button>
+      </form>
+
+      <div v-if="app.loading">
+        Loading...
+      </div>
+      <div v-else>
+        <div v-for="book in thumbnails">
+            <p>{{book}} </p>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
