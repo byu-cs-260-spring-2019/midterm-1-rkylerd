@@ -1,0 +1,156 @@
+
+
+body {
+    margin-left: 10%;
+    font-family: 'Trebuchet MS';
+    background-color: rgb(130, 161, 172);
+
+}
+
+#page_heading {
+    background: white;
+    border-radius: .25rem;
+    
+    width: 200px;
+    text-align: center;
+}
+#app {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.full_width {
+ width: 100%;
+
+}
+
+h4 {
+    font-family: 'Century Gothic';
+    background: rgb(99, 96, 96);
+    border-radius: .4rem;
+    color: white;
+    padding-left: 5px;
+    /* width: 250px; */
+    
+}
+
+@media only screen and (max-width: 1294px) and (min-width: 1091px){
+    
+    /* body {
+      background-color: green;
+    } */
+
+    
+  }
+
+@media only screen and (max-width: 1090px) {
+    /* body {
+      background-color: lightblue;
+    } */
+
+    #favorites {
+        
+        margin-right: auto;
+        
+        /* background: yellow; */
+    }
+    #search-results {
+        /* background: purple; */
+        min-width: 40%;
+        max-width: 60%;
+        margin-right: auto
+    }
+    .book-profile {
+        max-width: 100%;
+        min-width: 95%;
+    }
+  }
+
+#search-results {
+    /* background: purple; */
+    min-width: 320px;
+    width:60%;
+    max-width: 60%;
+    margin-right: auto
+}
+
+#favorites {
+    /* background: pink; */
+    margin-left: auto;
+    min-width: 33.33%;
+    max-width: 35%;
+    
+}
+
+.book-profile {
+    /* background: yellow; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    color: black;
+    font-size: x-small;
+    max-width: 50%;
+    
+    margin-bottom: 1rem;
+}
+
+.fav-book-profile {
+    /* background: orange; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    font-family: 'Trebuchet MS';
+    color: black;
+    font-size: x-small;
+    max-width: 90%;
+    
+    margin-bottom: 1rem;
+}
+.checkbox {
+    flex: .15;
+}
+
+.extra-small-font {
+    font-size: xx-small;
+}
+
+.small-font {
+    font-size: small;
+}
+
+.immediate-info {
+    font-weight: bold;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    flex: 1.5;
+    font-size: x-small;
+}
+
+.book-cover-container {
+    /* background: green; */
+    overflow: auto;
+    min-width: 100px;
+    flex: 1;
+}
+
+.fav-book-cover-container {
+    /* background: green; */
+    overflow: hidden;
+    min-width: 100px;
+    flex: .75;
+}
+
+.book-cover {
+    max-width: 100px;
+    height: auto;
+}
+
+.publish-date {
+    vertical-align: text-bottom;
+    font-size: x-small;
+    flex: .75;
+}
+
